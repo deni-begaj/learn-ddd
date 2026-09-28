@@ -1,0 +1,14 @@
+{
+  "name": "learn-ddd",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx ddd-ts-example/index.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}
