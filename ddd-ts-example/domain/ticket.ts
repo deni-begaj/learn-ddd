@@ -18,3 +18,10 @@ export class Ticket {
     message.editText(text);
   }
 }
+
+// Example: Edit Message
+const ticket = new Ticket("12", false, [])
+ticket.editMessage(
+  "message-42",
+  new MessageText("The problem is fixed"),
+);
