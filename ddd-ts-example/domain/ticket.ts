@@ -20,8 +20,7 @@ export class Ticket {
 }
 
 // Example: Edit Message
-const ticket = new Ticket("12", false, [])
-ticket.editMessage(
-  "message-42",
-  new MessageText("The problem is fixed"),
-);
+const message = new Message("message-42", new MessageText("The problem is open"));
+const ticket = new Ticket("12", false, [message]);
+ticket.editMessage("message-42", new MessageText("The problem is fixed"));
+console.log("Edited message:", message.getText().value);
